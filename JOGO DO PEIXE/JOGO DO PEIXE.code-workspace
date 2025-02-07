@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../INTELI"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JOGO DO PEIXE"
+	}
+}
