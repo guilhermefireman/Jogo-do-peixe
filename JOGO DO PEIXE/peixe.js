@@ -24,9 +24,17 @@ this.load.image('baleia','peixe/imagem_extra.png');
     function create  () {
     this.add.image(400,300,'oceano');
    this.add.image(400,500,'logo').setScale(0.5);
-  peixe_verde = this.add.image(400,300,'personagem').setTint(0x00ff00).setOrigin(0.5,0.5).setFlip(true,false);
+  //quando o dispositivo for um desktop, o peixe ficara na cor verde
+   if (game.device.os.desktop){
+   peixe_verde = this.add.image(400,300,'personagem').setTint(0x00ff00).setOrigin(0.5,0.5).setFlip(true,false);
+  //quando o dispositivo não for um desktop, o peixe mudara para a cor laranja
+} else{ 
+    peixe_verde = this.add.image(400,300,'personagem').setOrigin(0.5,0.5).setFlip(true,false);
+}
 this.add.image(400,300,'baleia').setScale(0.4);
-  }
+
+
+}
     
 
    
